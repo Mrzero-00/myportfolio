@@ -1,0 +1,488 @@
+.bodycontainer{
+    width:100%;
+    background-color: #253737;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    width:100%;
+}
+.header.on{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.header .fixedbar{
+    display: flex;
+    margin:20px 0;
+}
+
+.header .fixedbar li a{
+    font-size:  20px;
+    color:#FBE9C9;
+    padding: 10px;
+    padding-right : 100px;
+    transition: 0.5s;
+}
+
+.header .fixedbar li a:hover{
+    color:#ff3333;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#top-page .summary_title{
+    font-size: 70px;
+    margin-top: 0px;
+}
+#top-page .summary_description{
+    font-size: 30px;
+    margin-top: 20px;
+    color:#fff;
+}
+
+section.section__main{
+    width: 100vw;;
+    height : 100vh;
+    border-bottom:3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size:  50px;
+    margin-bottom:20px;
+}
+/* SUMMARY */
+
+.summary_title{
+    padding-top: 70px;
+    font-size : 50px;
+    color: #FBE9C9;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.6);
+}
+
+.summary_description{
+    margin-top:10px;
+    color:#e5e5e5;
+    font-size : 22px;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.6);
+}
+
+.sub_title{
+    display:inline-block;
+    font-size: 30px;
+    color: #FBE9C9;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.6);
+    margin-top:30px;
+    padding-bottom:10px;
+    border-bottom: 2px solid red;
+}
+
+.sub_description{
+    padding-left:20px;
+    font-size : 22px;
+    margin-top:10px;
+    color:#e5e5e5;
+    line-height: 1.5;
+    text-shadow: 0px 0px 2px rgba(0,0,0,.7);
+}
+
+/* PROFILE */
+
+.section__profile{
+    padding-top:120px;
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    position: relative;
+}
+
+.profile-img{
+    width:350px;
+    height:350px;
+    margin:0 50px;
+    background-image: url("../img/IMG_3635.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 50%;
+    box-shadow: 1px 3px 10px #000;
+}
+
+.profile-summary{
+    flex:1;
+    margin-top:30px;
+    padding-left : 100px;
+    width: 1024px;
+    border-left:1px solid #FBE9C9;
+    box-sizing: border-box;
+    padding-right:200px;
+}
+.profile-summary .swot{
+    width:100%;
+    padding-left:20px;
+
+}
+
+.swot .sub_description {
+    display:block;
+    width:45%;
+    margin: 10px;
+    height:100%;
+    padding: 10px;
+    float:left;    
+}
+
+/* SKILL */
+
+.section__skill{
+    padding-top:60px;
+    padding-bottom:60px;
+    width:100%;
+    /* position: relative; */
+}
+
+.skill_list{
+    display:flex;
+    font-size:20px;
+    height:100%;
+    justify-content: center;
+}
+.skill_list li{
+    padding: 60px;
+    transition: 0.6s;
+}
+
+.skill_list li:hover{
+    font-size:32px;
+    cursor: pointer;
+}
+
+.skill_list li.on_skill{
+    font-size:32px;
+    color: #e5e5e5;
+}
+
+.skill_list_box{
+    margin:0 auto;
+    width:800px;
+    height:300px;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.skill_list_box .skill_level{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 20px;
+}
+
+.skill_list_box .skill_level p{
+    font-size:  20px;
+    line-height:  1.5;
+
+}
+
+.skill_list_box .skill_level{
+    display: none;
+    transition: 0.4s;
+}
+
+.skill_list_box .skill_level.show_skill{
+    display: block;
+    transition: 0.4s;
+}
+
+.section__portfolio{
+    padding-top:60px;
+    width:100%;
+    position: relative;
+}
+
+/* PORTFOLIO */
+
+.section__portfolio{
+    display:flex;
+    align-items: center;
+}
+
+
+.scroll_box{
+    width: 100%;
+    margin:0 120px;
+    margin-bottom: 100px;
+    display:flex;
+    position: relative;
+}
+
+.viewbox{
+    width:400px; 
+    height:300px;
+    position: relative;
+    overflow: hidden;
+    margin:0 auto;
+    margin-bottom: 100px;
+} 
+
+.portfolio_list{
+    position:absolute;
+    float:left;    
+}
+
+
+.portfolio_list .portfolio_item{
+    width:400px;
+    height:300px;
+    background-color: #e5e5e5;
+    border-radius: 30px;
+    float:left;
+}
+
+.portfolio_list .portfolio_item h1{
+    font-size : 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio_list .portfolio_item p{
+    font-size : 1rem;
+    line-height:  1.5;
+    margin:20px;
+    text-align: center;
+}
+
+
+.open_btn{
+    padding: 5px 10px;
+    width: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.view_btn{
+    padding: 10px;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    background-color: #ff3333;
+    color:#000;
+    cursor: pointer;
+    transition: 0.4s;
+    margin:30px auto;
+}
+
+.view_btn:hover{
+    background-color: #333;
+    color:#fff;
+}
+
+
+.modal_overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal_overlay.off{
+    display:none;
+}
+
+.modal_html5,
+.modal_html5_2,
+.modal_js,
+.modal_react{
+    top:20%;
+    left:20%;
+    background-color: #fff;
+    width:60%;
+    height:60%;
+    margin:0 0;
+    padding: 30px;
+    text-align: center;
+    z-index: 100;
+    box-sizing: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+    border-radius: 10px;
+    position:fixed;
+    overflow:scroll;
+}
+
+.section__portfolio .modal_content a{
+    display: block;
+    width:200px;
+    font-size : 2rem;
+    font-weight: 700;
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 15px;
+    background-color: royalblue;
+    color:#e5e5e5;
+    transition: 0.4s;
+}
+
+.section__portfolio .modal_content a:hover{
+    background-color: saddlebrown;
+    transform: scale(0.95);
+    color:#fff;
+}
+
+
+.section__portfolio .off{
+    display:none;
+}
+
+
+
+#next_btn{
+    width:50px;
+    height:50px;
+    left:50%;
+    top:50%;
+    margin-left:350px;
+    background-image: url("../img/btn_1.png");
+    background-size: 50px 50px;
+    align-self: center;
+    transition: 0.4s;
+    position: absolute;
+}
+
+
+#next_btn:hover{
+    width:70px;
+    height:70px;
+    background-size: 70px 70px;
+    cursor: pointer;
+}
+
+#pre_btn{
+    width:50px;
+    height:50px;
+    left:50%;
+    top:50%;
+    margin-left:-400px;
+    background-image: url("../img/btn_2.png");
+    background-size: 50px 50px;
+    align-self: center;
+    transition: 0.4s;
+    position: absolute;
+    z-index: 100;
+}
+
+#pre_btn:hover{
+    width:70px;
+    height:70px;
+    background-size: 70px 70px;
+    cursor: pointer;
+    
+}
+
+.modal_img{
+    width : 80%;
+	height : auto;
+	padding-top : calc (1000 / 1000 * 100%);    
+    margin: 0 auto;
+    margin-top : 30px;
+}
+
+.modal_content .modal_img img{
+    max-width : 100%;
+
+}
+
+/* FLOAT */
+
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.profile-list li{
+    font-size : 20px;
+    margin-bottom : 20px;
+    margin-left: 5px;
+}
+
+.profile-list li:last-child{
+    margin-bottom: 50px;
+}
+
+#top_btn a{
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#top_btn a:hover{
+    font-size: 30px;
+}
+
+
+@media(max-width:980px){
+
+    .section__profile{
+        display:block;
+    }
+
+    .profile-img{
+        margin:0 auto;
+    }
+    
+    .swot .sub_description{
+        width:100%;
+        font-size: 18px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .profile-summary{
+        border:none;
+    }
+/* 
+    .portfolio_list .portfolio_item{
+        width:100%;
+        height:100%;
+    } */
+
+    #pre_btn{
+        margin-left:-300px;
+    }
+
+    #next_btn{
+        margin-left:250px;
+    }
+}
+
